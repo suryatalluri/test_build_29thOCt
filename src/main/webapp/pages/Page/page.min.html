@@ -1,4 +1,8 @@
-Application.$controller("MainPageController", ["$scope", function ($scope) {
+<style id="Page.css">
+
+</style>
+<script id="Page.js">
+Application.$controller("PagePageController", ["$scope", function ($scope) {
     "use strict";
 
     /* perform any action with the variables inside this block(on-page-load) */
@@ -18,3 +22,18 @@ Application.$controller("MainPageController", ["$scope", function ($scope) {
     };
 
 }]);
+
+</script>
+<script id="Page.variables.json">
+var _PagePage_Variables_ ={};
+</script>
+<script id="Page.html" type="text/ng-template">
+<wm-page data-ng-controller="PagePageController"> 
+    <wm-mobile-navbar></wm-mobile-navbar> 
+    <wm-content> 
+        <wm-page-content columnwidth="12"> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-mobile-tabbar dataset="home,star,music,cog,edit"></wm-mobile-tabbar> 
+</wm-page>
+</script>
